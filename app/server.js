@@ -10,7 +10,7 @@ app.use(express.json());
 app.use('/api',bookRoutes);
 
 const PORT=process.env.PORT || 8081;
-const MONGODB_URI='mongodb://mongo:27017/library';
+const MONGODB_URI='mongodb://167.86.86.168:27017/library';
 
 mongoose.connect(MONGODB_URI,{
     useNewUrlParser: true,useUnifiedTopology: true})
